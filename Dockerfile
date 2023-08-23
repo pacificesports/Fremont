@@ -14,7 +14,7 @@ RUN go mod download
 
 COPY . ./
 
-RUN go build -o /rincon
+RUN go build -o /fremont
 
 ##
 ## Deploy
@@ -23,9 +23,9 @@ FROM alpine:3.17
 
 WORKDIR /
 
-COPY --from=builder /rincon /rincon
+COPY --from=builder /fremont /fremont
 
 COPY --from=builder /usr/share/zoneinfo /usr/share/zoneinfo
 ENV TZ=America/Los_Angeles
 
-ENTRYPOINT ["/rincon"]
+ENTRYPOINT ["/fremont"]
