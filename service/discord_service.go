@@ -3,6 +3,7 @@ package service
 import (
 	"fremont/config"
 	"fremont/utils"
+
 	"github.com/bwmarrin/discordgo"
 )
 

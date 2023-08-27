@@ -5,6 +5,7 @@ import (
 	"fremont/controller"
 	"fremont/service"
 	"fremont/utils"
+
 	"github.com/gin-gonic/gin"
 )
 

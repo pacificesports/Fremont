@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"fremont/config"
 	"fremont/utils"
+	"time"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"time"
 )
 
 var DB *gorm.DB

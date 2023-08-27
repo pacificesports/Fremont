@@ -3,11 +3,12 @@ package service
 import (
 	"context"
 	"encoding/base64"
-	firebase "firebase.google.com/go/v4"
 	"fremont/config"
 	"fremont/utils"
-	"google.golang.org/api/option"
 	"time"
+
+	firebase "firebase.google.com/go/v4"
+	"google.golang.org/api/option"
 )
 
 var FirebaseAdmin *firebase.App

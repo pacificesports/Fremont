@@ -2,16 +2,17 @@ package controller
 
 import (
 	"context"
+	"fremont/config"
 	"fremont/service"
 	"fremont/utils"
-	"github.com/gin-gonic/gin"
 	"log"
 	"strings"
+
+	"github.com/gin-gonic/gin"
 )
 
 func InitializeRoutes(router *gin.Engine) {
-	// TODO: change ping route
-	router.GET("/fremont/ping", Ping)
+	router.GET("/"+strings.ToLower(config.Service.Name)+"/ping", Ping)
 }
 
 func RequestLogger() gin.HandlerFunc {
