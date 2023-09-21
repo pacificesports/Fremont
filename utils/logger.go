@@ -1,8 +1,7 @@
 package utils
 
 import (
-	"rincon/config"
-
+	"fremont/config"
 	"go.uber.org/zap"
 )
 
